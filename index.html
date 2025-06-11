@@ -5,21 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Drum Kit</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #e0e0e0;
+    }
+    .set {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .drum {
+      background: #fff;
+      color: #2a5298;
+      font-size: 2.2em;
+      border: none;
+      border-radius: 15px;
+      padding: 20px 30px;
+      margin: 12px 0;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(50, 50, 93, 0.11);
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+    }
+    .drum:active,
+    .drum.pressed {
+      background: #2a5298;
+      color: #fff;
+      transform: scale(0.97);
+    }
+  </style>
 </head>
 <body>
-
-  <h1>Drum Kit</h1>
-
-  <div class="set">
-    <button class="drum w">w</button>
-    <button class="drum a">a</button>
-    <button class="drum s">s</button>
-    <button class="drum d">d</button>
-    <button class="drum j">j</button>
-    <button class="drum k">k</button>
-    <button class="drum l">l</button>
+  <div class="container">
+    <h1>🥁 Drum Kit</h1>
+    <div class="subtitle">Press the buttons or use your keyboard (w, a, s, d, j, k, l) to play!</div>
+    <div class="set">
+      <button class="drum w">W</button>
+      <button class="drum a">A</button>
+      <button class="drum s">S</button>
+      <button class="drum d">D</button>
+      <button class="drum j">J</button>
+      <button class="drum k">K</button>
+      <button class="drum l">L</button>
+    </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
