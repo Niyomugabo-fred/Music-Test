@@ -1,5 +1,4 @@
-<style>
-    body {
+  body {
       background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: #fff;
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -48,4 +47,3 @@
       color: #fff;
       transform: scale(0.97);
     }
-  </style>
